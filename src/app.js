@@ -31,7 +31,22 @@ app.post("/repositories", (request, response) => {
 });
 
 app.put("/repositories/:id", (request, response) => {
-  // TODO
+  const { url, title, techs } = request.body;
+  const hasRepository = repositories.findIndex(
+    (repository) => repository.id === request.params.id
+  );
+  if (hasRepository === -1) {
+    return response.status(400).json();
+  }
+
+  repositories[hasRepository] = {
+    ...repositories[hasRepository],
+    url,
+    title,
+    techs,
+  };
+
+  return response.status(200).json(repositories[hasRepository]);
 });
 
 app.delete("/repositories/:id", (request, response) => {
