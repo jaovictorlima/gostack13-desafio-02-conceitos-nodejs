@@ -14,6 +14,9 @@ app.get("/repositories", (request, response) => {
   return response.status(201).json(repositories);
 });
 
+
+
+
 app.post("/repositories", (request, response) => {
   const { url, title, techs } = request.body;
 
@@ -24,6 +27,7 @@ app.post("/repositories", (request, response) => {
     techs,
     likes: 0,
   };
+  
 
   repositories.push(repository);
 
