@@ -7,11 +7,15 @@ assignees: ''
 
 ---
 
-# *[BUG] Título do problema*
+# *Título do problema*
 
 ### *Problema:*
 
-Descreva detalhadamente o problema.
+Descreva detalhadamente o problema. Você também pode adicionar uma lista para descrever como provocar o problema. Exemplo:
+
+- Primeiro clique aqui;
+- Depois aperte esse botão;
+- ...
 
 ### *Possível solução:*
 
