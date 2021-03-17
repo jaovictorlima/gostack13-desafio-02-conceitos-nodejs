@@ -1,7 +1,7 @@
 ---
 name: Sugerir novo recurso
 about: Sugestão de ideias para o projeto
-title: ''
+title: "[FEATURE] "
 labels: enhancement
 assignees: ''
 
